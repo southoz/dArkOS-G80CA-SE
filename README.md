@@ -4,13 +4,16 @@
 - Screen
 - Wifi to Mobile
 - Wifi to Infrastructure (Says it's failed, but has an IP when enabling remote services).
-- Joystick
+- Joystick 
 
 
 ## Issues - 
+- No Sound
 - LED when on Battery.
 - Battery Indicator in Emulation Station
-- Connecting to Wireless Infrastructure
+- Joystick Axis Mapping
+
+
 
 ## Keys
 
