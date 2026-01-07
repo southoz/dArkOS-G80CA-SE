@@ -2,19 +2,18 @@
 
 - Initial build for testing.
 
-[Google Drive](https://drive.google.com/file/d/1frND_Y6vhBmjU8Pmo4WeIsIKARC7yIdJ/view?usp=sharing)
-Image Hash - 81559F62E5EA46F2F104FE2337EAD75B1DAC9087
+[Google Drive](TBA)
+Image Hash - 0C9A7F048FC1FE75CE087DDBDF0D19BFB205DB2C 
 
 ## Working 
 - Screen
 - Wifi to Mobile
-- Wifi to Infrastructure (Says it's failed, but has an IP when enabling remote services).
-- Joystick - Note uses DarkOS Native control scheme for games, customisations will not be made to this release to make it compatible with dArkOS Features.
+- Wifi to Infrastructure.
+- Joystick - Note uses DarkOS Native control scheme for games and emulationstation
 - Sound
+- Battery LED Blue > 20% Red > 10% Blinksing Red < 10%
 
 ## Issues 
-- LED when on Battery is off above 30% and red 30% or less
-- Battery Profile in DTB
 - Battery Indicator in Emulationstation?
 - Headphones Untested
 
