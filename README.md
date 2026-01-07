@@ -1,9 +1,9 @@
 # dArkOS-G80CA
 
-**Custom dArkOS build optimized for G80CA / G80CA-MB devices**  
+**dArkOS build optimized for G80CA / G80CA-MB devices**  
 (RK3326-based R36S/RG351MP-style clones)
 
-This is a tailored version of [dArkOS](https://github.com/christianhaitian/dArkOS) designed to provide the purest dArkOS experience on G80CA hardware.
+This version of [dArkOS](https://github.com/christianhaitian/dArkOS) is designed to provide the purest dArkOS experience on G80CA hardware.
 
 The main differences from stock RG351MP builds are hardware-specific adjustments to make future updates and maintenance easier.  
 The **only** component out of sync with upstream dArkOS is the **Battery LED Service** script due to the G80CA LED GPIOS and dual red/blue LED hardware.
@@ -17,7 +17,7 @@ The **only** component out of sync with upstream dArkOS is the **Battery LED Ser
 - Wi-Fi
 - Joysticks (uses **dArkOS native** control scheme for games & EmulationStation)
 - Sound (speakers + headphones)
-- Battery LED behavior:  
+- Battery LED behaviour:  
   **Blue** ≥ 20% • **Blinking Red** < 20%
 
 ## ⚠️ Known Issues
