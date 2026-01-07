@@ -2,6 +2,9 @@
 
 - Initial build for testing.
 
+[Google Drive](https://drive.google.com/file/d/1frND_Y6vhBmjU8Pmo4WeIsIKARC7yIdJ/view?usp=sharing)
+Image Hash - 81559F62E5EA46F2F104FE2337EAD75B1DAC9087
+
 ## Working 
 - Screen
 - Wifi to Mobile
@@ -11,8 +14,8 @@
 
 ## Issues 
 - LED when on Battery.
-- Battery Charge Led - Bright Right
-- Battery Indicator in Emulationstation is hit and miss.
+- Battery Indicator in Emulationstation?
+- Headphones Untested
 
 ## Changes
 - Only to BOOT partition files with DTB updates.
