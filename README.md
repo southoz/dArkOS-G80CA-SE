@@ -22,9 +22,8 @@ The **only** component out of sync with upstream dArkOS is the **Battery LED Ser
 
 ## ⚠️ Known Issues
 
-- I have mapped the A and B buttons in hardware as intended, but the RG351MP has them swapped in the DTB, so I will reverse that and update.
-- Battery percentage indicator is not accurate.
-- Warm reboot doesn't work when the device is plugged in to charge.
+- Battery percentage indicator initially incorrect in Emulationstation
+- Reboot doesn't work when the device is plugged in to charger, stays at Battery DTB Screen
 
 ## ⚠️ Important Installation Warnings
 
