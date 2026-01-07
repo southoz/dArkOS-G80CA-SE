@@ -1,8 +1,9 @@
 # dArkOS-G80CA
 
-- Initial build for testing.
+- Image with most hardware elements tested and working.
 
 [Google Drive](https://drive.google.com/file/d/1nsfe2dP6o7pQNpjsnNwvwcXdradEMr4K/view?usp=sharing)
+
 Image Hash - 0C9A7F048FC1FE75CE087DDBDF0D19BFB205DB2C 
 
 ## Working 
