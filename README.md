@@ -1,65 +1,104 @@
 # dArkOS-G80CA
 
-- This distro is designed to be a pure dArkoOS experience
-- The modification to the stock RG351MP Make output has been around differences in the hardware, with the aim to simplify future upgrades.
-- The only firmware change that is out of sync with the core distribution is the Battery LED Service script.
+**Custom dArkOS build optimized for G80CA / G80CA-MB devices**  
+(RK3326-based R36S/RG351MP-style clones)
 
-## Working 
+This is a tailored version of [dArkOS](https://github.com/christianhaitian/dArkOS) designed to provide the purest dArkOS experience on G80CA hardware.
+
+The main differences from stock RG351MP builds are hardware-specific adjustments to make future updates and maintenance easier.  
+The **only** component still out of sync with upstream dArkOS is the **Battery LED Service** script.
+
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/southoz/dArkOS-G80CA?style=flat-square)](https://github.com/southoz/dArkOS-G80CA/releases)
+[![GitHub stars](https://img.shields.io/github/stars/southoz/dArkOS-G80CA?style=flat-square)](https://github.com/southoz/dArkOS-G80CA/stargazers)
+
+## ✅ What's Working
+
 - Screen
-- Wifi
-- Joystick - Note uses DarkOS Native control scheme for games and emulationstation
-- Sound
-- Headphones
-- Battery LED Blue >= 20% > Blinking Red
+- Wi-Fi
+- Joysticks (uses **dArkOS native** control scheme for games & EmulationStation)
+- Sound (speakers + headphones)
+- Battery LED behavior:  
+  **Blue** ≥ 20% • **Blinking Red** < 20%
 
-## Issues 
-- Battery Indicator in Emulationstation?
-- Warm reboot when on charger does not start.
+## ⚠️ Known Issues
 
-## Firmware Installation
-- Remove the second SD Card, or else it will fail the initial install
-- Do not have the charger plugged in, as it will not reboot during the install phases
+- Battery percentage indicator missing in EmulationStation
+- Warm reboot doesn't work when the device is plugged in to charge
 
-- Recommendation from ArkOS Wiki is to avoid Balana Etcher
-- Insert SD Card and Boot
-- Blue Screen will come up, and it will reboot after expanding partitions.
-- Blue Screen will come up, and it will reboot after expanding rom.tar
-- Device will boot normally to Emulationstation
-- If you have a second ROM SD Card,
-   - turn off,
-   - insert the card,
-   - boot,
-   - Press Start then Options -> Advanced -> Switch to SD2 for Roms
+## ⚠️ Important Installation Warnings
 
-## Keys
-- No analogue tuning yet, buttons have been aligned as best as possible, and joystick axis IDs and inversion status updated.
+Before flashing — **very important** to avoid bricking or failed installs:
 
-SDL Keymapping
+- **Remove the second SD card** (ROMs card) before starting installation
+- **Do NOT** have the charger plugged in during the whole flashing & first-boot process
+- The ArkOS Wiki recommends **avoiding Balena Etcher** for this device (many users report failures)
 
-| G80CA-MB Button     | G80CA-MB  Key SDL Code    | 
-|----------------------|------------------------------|
-| A Button (Right)            | Controller 00 button 00 state 1 button name a |
-| B Button (Bottom)           | Controller 00 button 01 state 1 button name b |
-| X Button (Top)              | Controller 00 button 02 state 1 button name x |
-| Y Button (Left)             | Controller 00 button 03 state 1 button name y |
-| L1 Button                   | Controller 00 button 09 state 1 button name leftshoulder |
-| R1 Button                   | Controller 00 button 10 state 1 button name rightshoulder |
-| L2 Button                   | Controller 00 axis 04 value 32767 axis name lefttrigger |
-| R2 Button                   | Controller 00 axis 05 value 32767 axis name righttrigger |
-| L3 Button                   | Joystick   00 button 14 state 1 |
-| R3 Button                   | Joystick   00 button 15 state 1 |
-| D-Pad Up                    | Controller 00 button 11 state 1 button name dpup |
-| D-Pad Down                  | Controller 00 button 12 state 1 button name dpdown|
-| D-Pad Left                  | Controller 00 button 13 state 1 button name dpleft |
-| D-Pad Right                 | Controller 00 button 14 state 1 button name dpright |
-| Start Button                | Joystick   00 button 13 state 1  |
-| Select Button               | Joystick   00 button 12 state 1 |
-| Function Button             | Joystick   00 button 16 state 1 |
-| Left Analogue Up            | Controller 00 axis 01 value -32767 axis name lefty |
-| Left Analogue Down          | Controller 00 axis 01 value +32768 axis name lefty |
-| Left Analogue Left          | Controller 00 axis 00 value -32767 axis name leftx |
-| Left Analogue Right         | Controller 00 axis 00 value +32768 axis name leftx |
-| Right Analogue Up           | Controller 00 axis 02 value +32767 axis name rightx |
-| Right Analogue Down         | Controller 00 axis 02 value -32768 axis name rightx |
-| Right Analogue Left         | Controller 00 axis 03 value +32767 axis name righty |
-| Right Analogue Right        | Controller 00 axis 03 value -32768 axis name righty) |
+## Step-by-Step Installation
+
+1. Download the latest image from:  
+   → [Releases page](https://github.com/southoz/dArkOS-G80CA/releases)
+
+2. Extract the `.img` file using **7-Zip** (or similar)
+
+3. Verify the file integrity (recommended):  
+   Compare the hash with the value published in the release notes
+
+4. Flash the image to a good quality microSD card using one of these tools (all confirmed working):
+   - USB Image Tool
+   - Raspberry Pi Imager
+   - Rufus (Windows)
+   - **Avoid** Balena Etcher if possible
+
+5. Insert the card (no second ROM card yet) → power on
+
+6. First boot:  
+   → Blue screen appears → device expands partitions → auto-reboots
+
+7. Second boot:  
+   → Blue screen again → expands `roms.tar` to EASYROMS partition → auto-reboots
+
+8. Final boot → you should land in EmulationStation
+
+### Adding ROMs on second SD card (optional)
+
+- Power off completely
+- Insert your ROMs SD card
+- Boot the device
+- Press **START** → **Options** → **Advanced** → **Switch to SD2 for Roms**
+
+## 🎮 Controller / Key Mapping (SDL)
+
+Buttons have been aligned as closely as possible to the **RG351MP** layout.  
+Analogue tuning is not yet implemented.
+
+| G80CA Button          | SDL Mapping / Name                  | Type / Value          |
+|-----------------------|-------------------------------------|-----------------------|
+| A (Right)             | `a`                                 | button 00             |
+| B (Bottom)            | `b`                                 | button 01             |
+| X (Top)               | `x`                                 | button 02             |
+| Y (Left)              | `y`                                 | button 03             |
+| L1                    | `leftshoulder`                      | button 09             |
+| R1                    | `rightshoulder`                     | button 10             |
+| L2                    | `lefttrigger`                       | axis 04 → 32767       |
+| R2                    | `righttrigger`                      | axis 05 → 32767       |
+| L3                    | —                                   | button 14             |
+| R3                    | —                                   | button 15             |
+| D-Pad Up              | `dpup`                              | button 11             |
+| D-Pad Down            | `dpdown`                            | button 12             |
+| D-Pad Left            | `dpleft`                            | button 13             |
+| D-Pad Right           | `dpright`                           | button 14             |
+| Start                 | —                                   | button 13 (Joystick)  |
+| Select                | —                                   | button 12 (Joystick)  |
+| Function              | —                                   | button 16 (Joystick)  |
+| Left Analog (all dir) | `leftx` / `lefty`                   | axis 00 / 01          |
+| Right Analog (all dir)| `rightx` / `righty`                 | axis 03 / 02          |
+
+**Note:** Axis directions/inversions have been adjusted to match typical RG351MP expectations.
+
+## Related Projects & Thanks
+
+- [dArkOS main project](https://github.com/christianhaitian/dArkOS) – huge thanks to christianhaitian!
+- Community discussions: r/R36S, r/SBCGaming, Retro Handhelds groups
+
+Feel free to report issues or suggest improvements in the [Issues tab](https://github.com/southoz/dArkOS-G80CA/issues).  
+Happy retro gaming! 🎮
