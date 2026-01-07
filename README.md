@@ -7,7 +7,7 @@
 - Joystick - Note uses DarkOS Native control scheme for games, customisations will not be made to this release to make it compatible with dArkOS Features.
 - Sound
 
-## Issues - 
+## Issues 
 - LED when on Battery.
 - Battery Charge Led - Bright Right
 - Battery Indicator in Emulationstation
@@ -62,3 +62,5 @@ SDL Keymapping
 | Right Analogue Left         | Controller 00 axis 03 value +32767 axis name righty |
 | Right Analogue Right        | Controller 00 axis 03 value -32768 axis name righty) |
 
+## Second SD Card 
+- It was hit and miss until I went and selected the option under advanced (at the bottom).
