@@ -11,12 +11,12 @@ Image Hash - 0C9A7F048FC1FE75CE087DDBDF0D19BFB205DB2C
 - Wifi
 - Joystick - Note uses DarkOS Native control scheme for games and emulationstation
 - Sound
+- Headphones
 - Battery LED Blue >= 20% > Blinking Red
 
 ## Issues 
 - Battery Indicator in Emulationstation?
 - Reboot when charging.
-- Headphones Untested
 
 ## Changes
 - ArkOS RG351MP build with BOOT partition and DTB updates for joystick, battery, leds and charger.
