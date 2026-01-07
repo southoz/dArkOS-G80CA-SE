@@ -2,7 +2,7 @@
 
 - This distro is designed to be a pure dArkoOS experience
 - The modification to the stock RG351MP Make output has been around differences in the hardware, with the aim to simplify future upgrades.
-- The only firmware change that is out of sync with the core distribution is 
+- The only firmware change that is out of sync with the core distribution is the Battery LED Service script.
 
 ## Working 
 - Screen
@@ -14,11 +14,7 @@
 
 ## Issues 
 - Battery Indicator in Emulationstation?
-- Reboot when charging.
-
-## Changes
-- ArkOS RG351MP build with BOOT partition and DTB updates for joystick, battery, leds and charger.
-- Battery Warning Service Python Script
+- Warm reboot when on charger does not start.
 
 ## Firmware Installation
 - Remove the second SD Card, or else it will fail the initial install
@@ -29,7 +25,7 @@
 - Blue Screen will come up, and it will reboot after expanding partitions.
 - Blue Screen will come up, and it will reboot after expanding rom.tar
 - Device will boot normally to Emulationstation
-- If you have a second ROM SD Card card,
+- If you have a second ROM SD Card,
    - turn off,
    - insert the card,
    - boot,
