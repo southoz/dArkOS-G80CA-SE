@@ -10,21 +10,24 @@
 ## Issues 
 - LED when on Battery.
 - Battery Charge Led - Bright Right
-- Battery Indicator in Emulationstation
+- Battery Indicator in Emulationstation is hit and miss.
 
 ## Changes
 - Only to BOOT partition files with DTB updates.
 
 ## Firmware Installation
+- Remove the second SD Card, or else it will fail the initial install
+- Do not have the charger plugged in, as it will not reboot during the install phases
 
-- Avoid Balana Etcher
+- - Recommendation is to avoid Balana Etcher
 - I have been using Raspberry Pi Imager
    - Select Operating System -> Custom (Last Option) -> Firmware File
-   - 
+   - Select Device
+
 <p align="center">
 <img width="681" height="486" alt="image" src="https://github.com/user-attachments/assets/ed325a9c-a293-4d29-a50c-89fc88701004" />
 </p>
-
+ - Finished
 <p align="center">
 <img width="684" height="487" alt="image" src="https://github.com/user-attachments/assets/202ff81c-3edb-4a47-a810-c66ad1852dd4" />
 </p>
