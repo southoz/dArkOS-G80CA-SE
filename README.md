@@ -22,8 +22,8 @@ The **only** component out of sync with upstream dArkOS is the **Battery LED Ser
 
 ## ⚠️ Known Issues
 
-- Battery percentage indicator missing in EmulationStation
-- Warm reboot doesn't work when the device is plugged in to charge
+- Battery percentage indicator is not accurate.
+- Warm reboot doesn't work when the device is plugged in to charge.
 
 ## ⚠️ Important Installation Warnings
 
