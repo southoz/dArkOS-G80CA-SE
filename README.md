@@ -22,19 +22,15 @@
 - Do not have the charger plugged in, as it will not reboot during the install phases
 
 - Recommendation from ArkOS Wiki is to avoid Balana Etcher
-- I have been using Raspberry Pi Imager
-   - Select Operating System -> Custom (Last Option) -> Firmware File
-   - Select Device
-
-<p align="center">
-<img width="681" height="486" alt="image" src="https://github.com/user-attachments/assets/ed325a9c-a293-4d29-a50c-89fc88701004" />
-</p>
-
- - Insert SD Card and Boot
- - Blue Screen will come up, and it will reboot after expanding partitions.
- - Blue Screen will come up, and it will reboot after expanding rom.tar
- - Device will boot normally to Emulationstation
- - If you have a second ROMs card, turn off, insert the card, boot, then Options -> Advanced -> Switch to SD2 for Roms
+- Insert SD Card and Boot
+- Blue Screen will come up, and it will reboot after expanding partitions.
+- Blue Screen will come up, and it will reboot after expanding rom.tar
+- Device will boot normally to Emulationstation
+- If you have a second ROMs card,
+   - turn off,
+   - insert the card,
+   - boot,
+   - Press Start then Options -> Advanced -> Switch to SD2 for Roms
 
 ## Keys
 - No analogue tuning yet, buttons have been aligned as best as possible and joystick axis IDs and inversion status updated.
