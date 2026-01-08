@@ -72,8 +72,8 @@ Analogue tuning is not yet implemented.
 
 | G80CA Button          | SDL Mapping / Name                  | Type / Value          |
 |-----------------------|-------------------------------------|-----------------------|
-| A (Right)             | `a`                                 | button 00             |
-| B (Bottom)            | `b`                                 | button 01             |
+| A (Right)             | `b`                                 | button 01             |
+| B (Bottom)            | `a`                                 | button 00             |
 | X (Top)               | `x`                                 | button 02             |
 | Y (Left)              | `y`                                 | button 03             |
 | L1                    | `leftshoulder`                      | button 09             |
