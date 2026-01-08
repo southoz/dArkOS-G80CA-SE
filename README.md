@@ -1,5 +1,9 @@
 # dArkOS-G80CA-SE
 
+<p align="center">
+<img width="584" height="440" alt="image" src="https://github.com/user-attachments/assets/7aea292f-10a6-4045-a450-295ad6d60df9" />
+</p>
+
 **Customised dArkOS build optimized for G80CA / G80CA-MB devices**  
 (RK3326-based R36S/RG351MP-style clones)
 
