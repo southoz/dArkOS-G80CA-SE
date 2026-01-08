@@ -25,7 +25,7 @@ The **only** component out of sync with upstream dArkOS is the **Battery LED Ser
 
 ## ⚠️ Known Issues
 
-- Battery percentage indicator initially incorrect in Emulationstation, settles down after a full charge cycle
+- Battery percentage indicator and early shutdown. I had used the datasheet to set the shutdown to 3400mV. I am now testing at 3300mV shutdown, but I need to do three full power cycles.
 
 ## ⚠️ Important Installation Warnings
 
