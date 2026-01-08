@@ -3,8 +3,8 @@
 **Customised dArkOS build optimized for G80CA / G80CA-MB devices**  
 (RK3326-based R36S/RG351MP-style clones)
 
-This version of [dArkOS](https://github.com/christianhaitian/dArkOS) is customised for the best experience on G80CA hardware.
-If you are looking for the pure [dArkOS](https://github.com/christianhaitian/dArkOS) experience on the G80CA try [dArkOS-G80CA](https://github.com/southoz/dArkOS-G80CA)
+- This version of [dArkOS](https://github.com/christianhaitian/dArkOS) is customised for the best experience on G80CA hardware.
+- If you are looking for the pure [dArkOS](https://github.com/christianhaitian/dArkOS) experience on the G80CA try [dArkOS-G80CA](https://github.com/southoz/dArkOS-G80CA)
 
 The main differences from stock RG351MP builds are hardware-specific adjustments to make future updates and maintenance easier.  
 The **only** component out of sync with upstream dArkOS is the **Battery LED Service** script due to the G80CA LED GPIOS and dual red/blue LED hardware.
